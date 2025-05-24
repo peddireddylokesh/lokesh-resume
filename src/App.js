@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { motion } from 'framer-motion';
-=======
-// Save this as App.js in a React project created with create-react-app
-
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> 1de1fcc (initial commit)
 
 const resumeData = {
   name: 'Peddireddy Lokesh',
@@ -48,7 +41,6 @@ const resumeData = {
 };
 
 const SectionTitle = ({ children }) => (
-<<<<<<< HEAD
   <motion.h2
     className="border-bottom border-primary pb-2 mb-4 text-primary"
     initial={{ opacity: 0, y: 30 }}
@@ -58,14 +50,10 @@ const SectionTitle = ({ children }) => (
   >
     {children}
   </motion.h2>
-=======
-  <h2 className="border-bottom border-primary pb-2 mb-4 text-primary">{children}</h2>
->>>>>>> 1de1fcc (initial commit)
 );
 
 function App() {
   return (
-<<<<<<< HEAD
     <motion.div
       className="container my-5 p-4 bg-white shadow rounded"
       initial={{ opacity: 0 }}
@@ -78,15 +66,10 @@ function App() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-=======
-    <div className="container my-5 p-4 bg-white shadow rounded">
-      <header className="mb-4">
->>>>>>> 1de1fcc (initial commit)
         <h1 className="text-primary">{resumeData.name}</h1>
         <p>
           <strong>Email:</strong> {resumeData.email} | <strong>Phone:</strong> {resumeData.phone}
         </p>
-<<<<<<< HEAD
       </motion.header>
 
       <section className="mb-5">
@@ -99,18 +82,10 @@ function App() {
         >
           {resumeData.professionalSummary}
         </motion.p>
-=======
-      </header>
-
-      <section className="mb-5">
-        <SectionTitle>Professional Summary</SectionTitle>
-        <p>{resumeData.professionalSummary}</p>
->>>>>>> 1de1fcc (initial commit)
       </section>
 
       <section className="mb-5">
         <SectionTitle>Key Skills</SectionTitle>
-<<<<<<< HEAD
         <motion.ul
           initial="hidden"
           whileInView="visible"
@@ -132,19 +107,11 @@ function App() {
             </motion.li>
           ))}
         </motion.ul>
-=======
-        <ul>
-          {resumeData.keySkills.map((skill, i) => (
-            <li key={i}>{skill}</li>
-          ))}
-        </ul>
->>>>>>> 1de1fcc (initial commit)
       </section>
 
       <section className="mb-5">
         <SectionTitle>Projects</SectionTitle>
         {resumeData.projects.map((project, i) => (
-<<<<<<< HEAD
           <motion.div
             key={i}
             className="mb-4 p-3 border rounded"
@@ -154,9 +121,6 @@ function App() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-======= 
-          <div key={i} className="mb-4">
->>>>>>> 1de1fcc (initial commit)
             <h5>{project.title}</h5>
             <p>
               <strong>Role:</strong> {project.role}
@@ -170,17 +134,12 @@ function App() {
                 <li key={idx}>{resp}</li>
               ))}
             </ul>
-<<<<<<< HEAD
           </motion.div>
-======= 
-          </div>
->>>>>>> 1de1fcc (initial commit)
         ))}
       </section>
 
       <section className="mb-5">
         <SectionTitle>Education</SectionTitle>
-<<<<<<< HEAD
         <motion.p
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -189,14 +148,10 @@ function App() {
         >
           {resumeData.education}
         </motion.p>
-======= 
-        <p>{resumeData.education}</p>
->>>>>>> 1de1fcc (initial commit)
       </section>
 
       <section>
         <SectionTitle>Tools & Technologies</SectionTitle>
-<<<<<<< HEAD
         <motion.ul
           initial="hidden"
           whileInView="visible"
@@ -220,15 +175,6 @@ function App() {
         </motion.ul>
       </section>
     </motion.div>
-======= 
-        <ul>
-          {resumeData.tools.map((tool, i) => (
-            <li key={i}>{tool}</li>
-          ))}
-        </ul>
-      </section>
-    </div>
->>>>>>> 1de1fcc (initial commit)
   );
 }
 
